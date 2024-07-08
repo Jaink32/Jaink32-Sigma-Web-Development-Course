@@ -1,0 +1,137 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(1 97 233);
+}
+
+.parent {
+    background-color: white;
+    width: 112vh;
+    height: 70vh;
+    margin-top: 101px;
+    border-radius: 14px;
+}
+
+.parent .child1>img {
+    width: 384px;
+    height: 526px;
+    border-radius: 12px;
+    margin-left: -29pc;
+}
+
+.child2 {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    font-size: 2pc;
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    margin-top: -31pc;
+    margin-left: 25pc;
+    justify-content: center;
+}
+
+.child3 input[type="email"] {
+    width: 382px;
+    margin-left: 355px;
+    margin-top: 40px;
+    font-size: 22.5px;
+    border-radius: 9px;
+    border: 2px solid #fdf0f0;
+    padding-left: 13px;
+}
+
+.child3 input[type="password"] {
+    width: 382px;
+    margin-left: 355px;
+    margin-top: 24px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid #fdf0f0;
+    padding-left: 13px;
+}
+
+.child4 input[type="checkbox"] {
+    margin-top: 19px;
+    margin-left: 59px;
+}
+
+.child5 input[type="submit"] {
+    background-color: rgb(0 123 255);
+    color: rgb(201 254 255);
+    align-items: center;
+    width: 26pc;
+    margin-left: 25pc;
+    margin-top: 17px;
+    border-radius: 17px;
+    font-size: 25px;
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-evenly;
+}
+
+.child6 {
+    text-align: right;
+    color: rgb(74 123 207);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 32px;
+}
+
+.child7 {
+    border: 2px solid black;
+    width: 100px;
+    margin-left: 35pc;
+    margin-top: 20px;
+}
+
+.child8 {
+    display: flex;
+    /* flex-direction: row; */
+    flex: 2;
+}
+
+.child8 a:nth-child(1) {
+    background-color: rgb(71 101 171);
+    color: rgb(230 243 255);
+    padding: 5px 9px 5px 9px;
+    margin-left: 407px;
+    border-radius: 7px;
+}
+
+.child8 a:nth-child(2) {
+    background-color: rgb(218 64 50);
+    color: rgb(230 243 255);
+    padding: 5px 9px 5px 9px;
+    margin-left: 46px;
+    border-radius: 7px;
+}
+
+.child8 a:nth-child(3) {
+    background-color: rgb(218 64 50);
+    color: rgb(230 243 255);
+    padding: 5px 9px 5px 9px;
+    margin-left: 46px;
+    border-radius: 7px;
+}
+hr{
+    width: 387px;
+    margin-top: 24px;
+    margin-left: 410px;
+    opacity: 0.3;
+}
+.child9>p:nth-child(1){
+    margin-top: 23px;
+    margin-left: 239px;
+    font-size: 21px;
+}
+.child9>p:nth-child(2){
+    margin-top: -24px;
+    margin-left: 35pc;
+    font-size: 21px;
+    color: rgb(74 123 207);
+}

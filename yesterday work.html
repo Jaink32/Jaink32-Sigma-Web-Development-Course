@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+        }
+        ul li
+        {padding:2px;}
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><input type="text" placeholder="name"></li>
+        <li><input type="button" value="adddata" onclick="myfunct()"></li>
+        <li><input type="button" value="delete" onclick="mydelete()"></li>
+        <li><input type="button" value="search" onclick="mysarch()"></li>
+    </ul>
+    <h1 id="dis"></h1>
+    <h2 id="alldata"></h2>
+
+    <script>
+
+var users=[10,50,80,60];
+var allinput;
+function myfunct()
+{
+   allinput = document.querySelectorAll('input');
+    // users.push(allinput[0].value);
+    users.unshift(allinput[0].value);
+
+    console.log(allinput);
+    console.log(users);
+    myarr();
+
+}
+
+function mydelete()
+{
+    // users.pop();
+    users.shift();
+    console.log(users);
+    myarr();
+}
+
+function mysarch()
+{
+    var s = allinput[0].value;
+    // var searchdata = users.indexOf(s);
+    var searchdata = users.lastIndexOf(s);
+    document.getElementById('dis').innerHTML=searchdata;
+    myarr();
+}
+
+function myarr()
+{
+    document.getElementById('alldata').innerHTML=`<pre> ${users}</pre>`;
+}
+
+myarr();
+
+
+
+    </script>
+</body>
+</html>
