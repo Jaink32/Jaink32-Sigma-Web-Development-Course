@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            /* It's a Global Variable. You are use anywhere in css. */
+            --color:rgb(104, 20, 124);
+            --selector:rgb(115, 38, 181);
+            --devop:0.4;
+        }
+        .nav{
+            background-color: var(--color);
+        }.container{
+            background-color: var(--selector);
+        }
+        ul{
+            display: flex;
+
+        }
+        ul li{
+            opacity: var(--devop);
+            border: 2px solid black;
+            list-style: none;
+            padding: 30px;
+        }
+        ul li:first-child{
+            --color:rgb(162, 78, 183); /*It's a local variable because you use indise this */
+            color: var(--color,orange);
+        }
+        ul li:nth-child(2){
+            color: rebeccapurple;
+        }
+        ul li:nth-child(4){
+            background-color:hotpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio doloremque laudantium ipsam iure rem, dolorum
+        recusandae nemo consequatur neque quos possimus? Nemo, voluptatum sit! Delectus eveniet autem dolorum
+        perferendis. Quae vero eos dolore quibusdam esse illum id cumque incidunt? Laborum deserunt officia ex explicabo
+        deleniti.
+    </div>
+</body>
+
+</html>

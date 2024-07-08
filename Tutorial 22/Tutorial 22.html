@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            background-color: brown;
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            /* width: 804px; */
+            margin: auto;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+            box-sizing: border-box;
+            background-color: brown;
+            border: 2px solid black;
+            width: 80vw;
+            /* width: 50%; */
+            min-height: 80vh;
+            /* height: 130vh; */
+            font-size: 18px;
+            /* width: 804px; */
+            margin: 23px auto;
+        }
+
+        .container > div {
+            /* font-size: 1.5em;  */
+            /*em is equal to 2* px */
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid black;
+            /*em is equal to 2* px */
+        }
+
+        .container > div > div {
+            border: 2px solid black;
+        }
+
+        .myCont {
+            border: 2px solid black;
+            margin: 23px auto;
+            box-sizing: border-box;
+            background-color: red;
+            color: yellow;
+            font-size: 25px;
+            width: 100vmin;
+            /* width: 100vw; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ullam earum omnis modi animi natus eos
+            suscipit, fuga, soluta consectetur totam eligendi doloremque laboriosam sunt error accusamus ipsum vero.
+            Error
+            eos ullam incidunt recusandae consequatur ab in ex molestiae? In, architecto eius aliquid nostrum illo
+            distinctio? Dignissimos quas quaerat sequi?
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugit a unde aperiam laborum
+                deserunt minima molestiae doloribus cupiditate rerum?
+            </div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed eius tempora officia, vero neque debitis dolor
+        in recusandae officiis, necessitatibus esse deserunt consectetur consequatur pariatur quidem beatae! Eveniet
+        error voluptatum perspiciatis nobis officiis fuga. Et consequuntur unde, aliquid eligendi deleniti illum.
+        Laborum, reprehenderit architecto debitis, consequuntur deserunt autem deleniti saepe eius veritatis iure ullam.
+        Quae fuga rem cupiditate placeat unde dolor, vel id et repellat modi. Aliquid fugit esse eaque illo,
+        exercitationem enim provident praesentium odit tempora quisquam dolore et sed explicabo sint consectetur harum
+        molestias voluptatibus sunt fuga nulla doloremque iusto ea ad? Eos, consequatur deserunt quos aliquid earum
+        delectus enim ea veniam quibusdam facere officiis quasi itaque dolores fuga pariatur eum fugiat doloribus non.
+        Facere excepturi totam ex consequatur?
+    </div>
+    <div class="myCont">
+        I am another content div.
+    </div>
+</body>
+
+</html>

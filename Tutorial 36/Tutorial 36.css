@@ -1,0 +1,33 @@
+:root{
+    --primary-color:rgb(121, 59, 180);
+    --text-color:white;
+    --second-color:rgba(41, 133, 50, 0.77);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    background-color: var(--primary-color);
+}
+
+nav {
+    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+    /* background-color: blueviolet; */
+    background-color: var(--second-color);
+    padding: 31px 0px 29px 0pc;
+}
+
+ul li{
+    list-style: none;
+    /* text-decoration: none; */
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+}
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}

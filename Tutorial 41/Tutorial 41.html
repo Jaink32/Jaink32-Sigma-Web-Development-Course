@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Navbar using Flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .logo img {
+            width: 170px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI';
+            padding-top: 15px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 35px;
+        }
+
+        .right ul li {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .right ul li i {
+            padding-left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Design the website's Navbar using Flexbox-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <img src="image.png" alt="Error"> --> <!-- loacl image for future purpose-->
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    <li>Pricing <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    <li>Resources <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    <li>About us <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    <li>Security and compliance</li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
